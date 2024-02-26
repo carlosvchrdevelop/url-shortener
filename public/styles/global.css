@@ -1,0 +1,80 @@
+body {
+    background-color: #212121;
+    color: white;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: system-ui;
+    outline: none;
+}
+
+body > main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    outline: none;
+}
+
+#search-box > input {
+    padding: 0.8rem 1rem;
+    width: max(30rem, 40vw);
+    font-size: 1.2rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border: none;
+    text-align: center;
+}
+
+#search-box > button {
+    padding: 0.8rem 1rem;
+    background-color: #a5ffd6;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0rem 0.5rem 0.5rem 0;
+}
+
+#search-box > button:hover > span {
+    transform: translateY(2rem);
+}
+
+#hostnameref {
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+#res-container {
+    height: 4rem;
+}
+
+#clipboard {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 10rem;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#clipboard > svg {
+    fill: #a5ffd6;
+}
+
+#clipboard-msg {
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: 300ms ease-in-out;
+    font-size: 0rem;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
